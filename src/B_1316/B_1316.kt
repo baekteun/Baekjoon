@@ -12,7 +12,6 @@ fun main(args: Array<String>) {
     }
     println(count)
 }
-@Throws(IOException::class)
 fun group(): Boolean {
     val check = BooleanArray(26)
     var overlap = 0
