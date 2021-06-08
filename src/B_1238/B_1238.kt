@@ -45,7 +45,7 @@ fun main(args: Array<String>)=with(BufferedReader(InputStreamReader(System.`in`)
     dijkstra(list_back, back,X)
     var res = -1
     for(i in 1..N){
-        res = Math.max(res, front[i]+back[i])
+        res = res.coerceAtLeast(front[i] + back[i])
     }
     print(res)
 
