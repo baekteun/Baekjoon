@@ -33,8 +33,8 @@ public class B_1431 {
             }
 
         });
-        for(int i=0; i<arr.length; i++){
-            bw.write(arr[i]+"\n");
+        for (String s : arr) {
+            bw.write(s + "\n");
             bw.flush();
         }
 

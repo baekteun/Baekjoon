@@ -11,7 +11,7 @@ public class B_1260 {
         boolean[] visited1 = new boolean[n+1];
         LinkedList<Integer>[] adjList = new LinkedList[n+1];
         for(int i=0; i<=n; i++){
-            adjList[i] = new LinkedList<Integer>();
+            adjList[i] = new LinkedList<>();
         }
         for(int i=0; i<m; i++){
             int v1=sc.nextInt();
@@ -23,23 +23,21 @@ public class B_1260 {
             Collections.sort(adjList[i]);
         }
         dfs_list(v,adjList,visited);
-        System.out.println("");
+        System.out.println();
         bfs_list(v,adjList,visited1);
 
 
     }
     public static void bfs_list(int v, LinkedList<Integer>[] adjList, boolean[] visited){
-        Queue<Integer> q= new LinkedList<Integer>();
+        Queue<Integer> q= new LinkedList<>();
         visited[v]=true;
         q.add(v);
         while(q.size() != 0){
             v= q.poll();
             System.out.print(v+" ");
-            Iterator<Integer> iter = adjList[v].listIterator();
-            while(iter.hasNext()){
-                int w=iter.next();
-                if(!visited[w]){
-                    visited[w]=true;
+            for (int w : adjList[v]) {
+                if (!visited[w]) {
+                    visited[w] = true;
                     q.add(w);
                 }
             }
@@ -49,10 +47,8 @@ public class B_1260 {
     public static void dfs_list(int v, LinkedList<Integer>[] adjList,boolean[] visited){
         visited[v]=true;
         System.out.print(v+" ");
-        Iterator<Integer> iter = adjList[v].listIterator();
-        while(iter.hasNext()){
-            int w=iter.next();
-            if(!visited[w]) dfs_list(w,adjList,visited);
+        for (int w : adjList[v]) {
+            if (!visited[w]) dfs_list(w, adjList, visited);
         }
     }
 }
