@@ -1,3 +1,10 @@
 /out/
 /.idea/
 /venv/
+.DS_Store
+src/B_10815/
+src/B_10816/
+src/B_11497/
+src/B_1654/
+src/B_2805/
+src/B_7576/B_7576.swift
