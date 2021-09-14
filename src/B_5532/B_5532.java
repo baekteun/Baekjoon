@@ -11,9 +11,7 @@ public class B_5532 {
         int C = Integer.parseInt(br.readLine());
         int D = Integer.parseInt(br.readLine());
         int s = (A/C) + (A%C==0 ? 0 : 1);
-        System.out.println(s);
         int d = (B/D) + (B%D==0 ? 0 : 1);
-        System.out.println(d);
         System.out.println(L-Math.max(s,d));
     }
 }
