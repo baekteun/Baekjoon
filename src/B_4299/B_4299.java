@@ -11,7 +11,7 @@ public class B_4299 {
         int m = Integer.parseInt(st.nextToken());
         int x = (s+m)/2;
         int y = s - x;
-        if(s-m<0 || (s-m)%2!=0) System.out.println(-1);
+        if((s-m)<0 || (s-m)%2!=0) System.out.println(-1);
         else{
             System.out.println(Math.max(x,y)+" "+Math.min(x,y));
         }
