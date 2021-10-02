@@ -2,8 +2,6 @@ package B_1837
 
 import java.io.*
 import java.util.*
-import kotlin.math.min
-import kotlin.system.exitProcess
 
 fun main() = with(BufferedReader(InputStreamReader(System.`in`))){
     val st = StringTokenizer(readLine())
