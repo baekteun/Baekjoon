@@ -29,7 +29,7 @@ fun main()=with(BufferedReader(InputStreamReader(System.`in`))){
 fun setEra(){
     eratos[0] = true
     eratos[1] = true
-    for (i in 1 until eratos.size){
+    for (i in 1 until Math.sqrt(eratos.size.toDouble()).toInt()){
         if(!eratos[i])
             for(k in i*i until eratos.size step i)
                 eratos[k] = true
