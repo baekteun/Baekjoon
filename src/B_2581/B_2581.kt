@@ -6,10 +6,8 @@ import kotlin.system.exitProcess
 val eratos = BooleanArray(10_001){false}
 fun main()=with(BufferedReader(InputStreamReader(System.`in`))){
     setEra()
-    var x: Int
-    var y: Int
-    readLine().let { x = it.toInt() }
-    readLine().let { y = it.toInt() }
+    var x: Int = readLine().toInt()
+    var y: Int = readLine().toInt()
     var res = 0
     var min = 0
 
