@@ -21,6 +21,7 @@ fun main()=with(BufferedReader(InputStreamReader(System.`in`))){
             when(command[i]){
                 'R' -> isR = !isR
                 'D' -> {
+
                     when(q.isEmpty()){
                         true -> {
                             sb.append("error").append('\n')
